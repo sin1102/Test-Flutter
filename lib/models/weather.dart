@@ -1,11 +1,11 @@
 class WeatherDetail {
-  int? latitude;
+  double? latitude;
   double? longitude;
   double? generationtimeMs;
   int? utcOffsetSeconds;
   String? timezone;
   String? timezoneAbbreviation;
-  int? elevation;
+  double? elevation;
   CurrentUnits? currentUnits;
   Current? current;
 

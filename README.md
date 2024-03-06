@@ -2,15 +2,15 @@
 
 A new Flutter project.
 
-## Getting Started
+## Cau 1
 
-This project is a starting point for a Flutter application.
+<table>
+<tr>
+<th><img src="lib/demo/1.jpg" width="320"/></th>
+<th><img src="lib/demo/2.jpg" width="320"/></th>
+</tr>
+</table>
 
-A few resources to get you started if this is your first Flutter project:
+## Cau 2
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="lib/demo/3.jpg" width="320"/>

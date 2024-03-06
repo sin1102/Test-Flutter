@@ -18,12 +18,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: screen[tab],
       bottomNavigationBar: Container(
-        color: Color.fromARGB(255, 224, 224, 224),
+        color: Colors.cyan,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 12.0),
           child: GNav(
-              backgroundColor: Color.fromARGB(255, 224, 224, 224),
-              tabBackgroundColor: Color.fromARGB(255, 206, 205, 205),
+              backgroundColor: Colors.cyan,
+              tabBackgroundColor: const Color.fromARGB(255, 0, 156, 177),
               padding: EdgeInsets.all(10),
               gap: 8,
               onTabChange: (value) {
