@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class ProgressBar extends StatefulWidget {
   const ProgressBar({super.key});
@@ -21,22 +18,19 @@ class _ProgressBarState extends State<ProgressBar> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: EdgeInsets.all(15.0),
-            child: LinearPercentIndicator(
-              width: size.width * 0.8,
-              lineHeight: 20.0,
-              percent: progress,
-              center: Text(
-                "${(progress * 100)}%",
-                style: new TextStyle(fontSize: 12.0),
-              ),
-              trailing: Icon(Icons.mood),
-              linearStrokeCap: LinearStrokeCap.roundAll,
-              backgroundColor: Color.fromARGB(255, 192, 191, 191),
-              progressColor: const Color.fromARGB(255, 88, 163, 224),
-            ),
-          ),
+          Container(
+              padding: EdgeInsets.all(12.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  LinearProgressIndicator(
+                    backgroundColor: Colors.grey,
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.cyan),
+                    value: progress,
+                  ),
+                  Text('${(progress * 100).round()}%'),
+                ],
+              )),
           SizedBox(
             width: size.width * 0.5,
             height: size.height * 0.1,
